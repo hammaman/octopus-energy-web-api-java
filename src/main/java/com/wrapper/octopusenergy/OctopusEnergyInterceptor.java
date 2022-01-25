@@ -11,6 +11,10 @@ import java.util.Map;
 import static com.wrapper.octopusenergy.OctopusEnergyApi.CONTENT_TYPE_JSON;
 import static com.wrapper.octopusenergy.OctopusEnergyApi.HEADER_CONTENT_TYPE;
 
+// This class is required for the Okhttp requests
+// to provide authentication
+// e.g. see https://stackoverflow.com/questions/22490057/android-okhttp-with-basic-authentication
+
 public class OctopusEnergyInterceptor implements Interceptor {
 
     private final String credentials;
